@@ -135,6 +135,7 @@ exports.playCmd = rl => {
             if (toBeResolved.length == 0){
                 log('Has terminado!', 'grey');
                 log('Has conseguido:');log(score,"blue"); log ('puntOTs');
+                log(fin, 'magenta');
                 rl.prompt();
                 return;
             } else {
@@ -151,6 +152,7 @@ exports.playCmd = rl => {
                         log('Respuesta correcta', 'green');
                         score = score + 1;
                         log(score ,'green');
+                     
 
 
                         playOne();
@@ -158,6 +160,7 @@ exports.playCmd = rl => {
                         toBeResolved.splice(0, toBeResolved.length);
                         log('Respuesta incorrecta', 'red');
                         log(score,'red');
+                        log(fin, 'magenta');
                         rl.prompt();
                         return;
                     }

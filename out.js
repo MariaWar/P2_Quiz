@@ -1,3 +1,4 @@
+
 const figlet = require ('figlet');
 const chalk = require ('chalk');
 
@@ -17,7 +18,7 @@ log = (msg, color) => {
 	log(figlet.textSync(msg, { horizontalLayout: 'full' }), color);
 };*/
 
-errorlog = (emensajOT) => {
+errorlog = (emsg) => {
 	console.log(`${colorize("Error", "red")}: ${colorize(colorize(emsg, "red"), "bgYellowBright")}`);
 };
 
